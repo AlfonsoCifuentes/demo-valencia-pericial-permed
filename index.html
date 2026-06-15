@@ -3,149 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demo rediseño web | PERMED</title>
-  <meta name="description" content="Demo conceptual no oficial de rediseño web para PERMED.">
+  <title>PERMED | Peritos judiciales y mediadores</title>
+  <meta name="description" content="Servicios periciales judiciales, informática forense, telefonía, recuperación de datos y mediación profesional.">
   <style>
-    :root { --accent:#06b6d4; --accent2:#84cc16; --dark:#07111f; --pale:#e8fbff; --ink:#111827; --muted:#64748b; --line:rgba(15,23,42,.14); --white:#fff; }
+    :root { --accent:#06b6d4; --accent2:#84cc16; --dark:#07111f; --pale:#e8fbff; --ink:#111827; --muted:#64748b; --line:rgba(15,23,42,.13); --white:#fff; }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--white); line-height: 1.52; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fff; line-height: 1.55; }
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 8px; border: 1px solid transparent; padding: 11px 16px; font-weight: 800; }
-    .button.primary { background: var(--accent); color: #fff; }
-    .button.secondary { border-color: currentColor; color: inherit; background: transparent; }
     h1, h2, h3, p { margin-top: 0; }
-    h1 { font-size: clamp(38px, 7vw, 82px); line-height: .94; letter-spacing: 0; }
+    h1 { max-width: 920px; font-size: clamp(39px, 7vw, 78px); line-height: .96; letter-spacing: 0; color: inherit; }
     h2 { font-size: clamp(28px, 4vw, 52px); line-height: 1.04; letter-spacing: 0; color: var(--dark); }
-    h3 { font-size: 20px; line-height: 1.16; color: var(--dark); }
-    .eyebrow { color: var(--accent); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 900; }
+    h3 { color: var(--dark); font-size: 21px; line-height: 1.18; margin-bottom: 10px; }
+    p { color: #4b5563; }
     .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
-    .top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
-    .top .wrap { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: grid; gap: 0; }
+    .top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .top .wrap { min-height: 66px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { display: grid; gap: 1px; }
     .brand strong { color: var(--dark); font-size: 20px; }
-    .brand span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
-    nav { display: flex; align-items: center; gap: 18px; font-size: 14px; color: var(--dark); }
-    section { padding: clamp(54px, 7vw, 96px) 0; }
-    .grid { display: grid; gap: 22px; }
-    .two { grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr); align-items: center; }
-    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .tile { border: 1px solid var(--line); border-radius: 8px; padding: 22px; background: #fff; min-height: 164px; }
-    .tile b { color: var(--accent); font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+    .brand span { color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    nav { display: flex; align-items: center; gap: 18px; color: var(--dark); font-size: 14px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 8px; padding: 11px 16px; border: 1px solid transparent; font-weight: 850; }
+    .button.primary { background: var(--accent); color: #fff; }
+    .button.secondary { color: inherit; border-color: currentColor; background: transparent; }
+    .hero { min-height: calc(100vh - 66px); display: grid; align-items: center; color: #fff; background-image: linear-gradient(90deg, rgba(8,12,22,.86), rgba(8,12,22,.58), rgba(8,12,22,.18)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=82'); background-size: cover; background-position: center; padding: clamp(56px, 8vw, 96px) 0; }
+    .hero .lead { max-width: 760px; color: rgba(255,255,255,.88); font-size: clamp(18px, 2vw, 22px); }
+    .eyebrow { color: var(--accent2); font-size: 12px; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    section { padding: clamp(54px, 7vw, 92px) 0; }
     .soft { background: var(--pale); }
+    .two { display: grid; grid-template-columns: minmax(0, .9fr) minmax(300px, .58fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+    .services { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 30px; }
+    .card { min-height: 210px; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 22px; }
+    .card p { margin-bottom: 0; }
+    .feature-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+    .feature-list li { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 16px 18px; color: var(--dark); font-weight: 760; }
+    .steps { margin: 28px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .steps li { min-height: 120px; border-radius: 8px; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.07); color: #fff; padding: 18px; }
+    .steps span { display: inline-flex; width: 34px; height: 34px; border-radius: 50%; align-items: center; justify-content: center; background: var(--accent2); color: #111827; font-weight: 900; margin-bottom: 14px; }
     .dark { background: var(--dark); color: #fff; }
-    .dark h2, .dark h3 { color: #fff; }
-    .dark p { color: rgba(255,255,255,.76); }
-    .source { font-size: 13px; color: var(--muted); }
-    .contactbox { border-radius: 8px; border: 1px solid var(--line); background: #fff; padding: 24px; }
-    .contactbox dl { margin: 0; display: grid; gap: 14px; }
-    .contactbox dt { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; font-weight: 900; }
-    .contactbox dd { margin: 4px 0 0; font-weight: 760; color: var(--dark); overflow-wrap: anywhere; }
-    .lead-copy { font-size: clamp(17px, 2vw, 22px); color: color-mix(in srgb, var(--dark) 72%, #fff); }
+    .dark h2 { color: #fff; }
+    .dark p { color: rgba(255,255,255,.78); }
+    .contact-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 24px; }
+    .contact-card dl { margin: 0; display: grid; gap: 16px; }
+    .contact-card dt { color: var(--muted); font-size: 12px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .contact-card dd { margin: 4px 0 0; color: var(--dark); font-weight: 760; overflow-wrap: anywhere; }
     footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
-    footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .style-editorial h1, .style-paper h1, .style-magazine h1, .style-dossier h1 { font-family: Georgia, "Times New Roman", serif; }
+    .style-luxury .hero { background-image: linear-gradient(90deg, rgba(23,20,22,.9), rgba(23,20,22,.52), rgba(23,20,22,.14)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=82'); }
+    .style-forensic .hero { background-image: linear-gradient(90deg, rgba(7,17,31,.96), rgba(7,17,31,.72)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=82'); }
+    .style-campus .card { border-bottom: 6px solid var(--accent); }
+    .style-minimal .button.primary { background: var(--dark); }
     @media (max-width: 900px) {
       nav a:not(.button) { display: none; }
-      .two, .three, .four { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .two, .services, .steps { grid-template-columns: 1fr; }
+      .card, .steps li { min-height: auto; }
       h1 { font-size: clamp(36px, 13vw, 58px); }
-      .tile { min-height: auto; }
     }
   </style>
-  <style>
-      body { background:#07111f; color:#e5f7ff; }
-      .top { background:rgba(7,17,31,.9); border-color:rgba(6,182,212,.22); }
-      .top .brand strong, .top nav { color:#fff; } .top .brand span { color:rgba(255,255,255,.6); }
-      .forensic-hero { min-height:calc(100vh - 66px); display:grid; align-items:center; background-image:linear-gradient(90deg, rgba(7,17,31,.96), rgba(7,17,31,.74)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=82'); background-size:cover; background-position:center; }
-      .terminal-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.62fr); gap:34px; align-items:center; }
-      .forensic-hero h1 { color:#fff; }
-      .terminal { border:1px solid rgba(6,182,212,.42); border-radius:8px; padding:24px; background:rgba(2,6,23,.82); color:#86efac; min-height:250px; white-space:pre-wrap; font: 15px/1.65 "Cascadia Mono", Consolas, monospace; }
-      .tile { background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.16); color:#fff; }
-      .tile h3 { color:#fff; }
-      .proof-row span { background:rgba(255,255,255,.06); color:#fff; border-color:rgba(255,255,255,.18); }
-      .contactbox { background:#0b1729; border-color:rgba(255,255,255,.14); }
-      .contactbox dd { color:#fff; }
-      @media (max-width:900px){ .terminal-grid{grid-template-columns:1fr;} }
-    </style>
 </head>
-<body class="layout-forensic">
+<body class="style-forensic">
   <header class="top">
     <div class="wrap">
-      <a class="brand" href="#inicio"><strong>PERMED</strong><span>peritos judiciales y mediadores · Valencia / Alicante / Castellon</span></a>
+      <a class="brand" href="#inicio"><strong>PERMED</strong><span>Peritos judiciales y mediadores</span></a>
       <nav>
-        <a href="#diagnostico">Diagnostico</a>
-        <a href="#propuesta">Propuesta</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Atención</a>
         <a href="#contacto">Contacto</a>
         <a class="button primary" href="tel:609668009">Llamar</a>
       </nav>
     </div>
   </header>
-  <section class="hero forensic-hero" id="inicio">
-      <div class="wrap terminal-grid">
+
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <p class="eyebrow">Comunidad Valenciana · Peritos judiciales y mediadores</p>
+      <h1>Informes periciales, mediación y análisis técnico con rigor</h1>
+      <p class="lead">Servicios periciales judiciales, informática forense, telefonía, recuperación de datos y mediación profesional.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="tel:609668009">Consultar un caso</a>
+        <a class="button secondary" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="soft">
+      <div class="wrap two">
         <div>
-          <p class="eyebrow">CASE FILE / WEB AUDIT</p>
-          <h1>Pericial, mediacion y forense digital con una web que inspire prueba, no improvisacion</h1>
-          <p class="lead-copy">Demo oscura y tecnica para presentar criminalistica, telefonia forense, recuperacion de datos e informes periciales como servicios de alta confianza.</p>
-          <div class="hero-actions"><a class="button primary" href="#propuesta">Abrir informe</a><a class="button secondary" href="mailto:permed@permed.es">Enviar caso</a></div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Rigor técnico para decisiones legales y empresariales</h2>
+          <p>PERMED ofrece informes claros, documentación ordenada y atención especializada para abogados, empresas y particulares.</p>
         </div>
-        <pre class="terminal">status: active
-sector: peritos judiciales y mediadores
-signal: outdated_joomla
-ticket: 780 EUR
-next: consultation</pre>
+        <ul class="feature-list">
+          <li>Atención 24/7</li>
+<li>Documentación técnica</li>
+<li>Servicios forenses especializados</li>
+        </ul>
       </div>
     </section>
-  <main>
-    <section id="diagnostico" class="dark">
-    <div class="wrap grid two">
-      <div>
-        <p class="eyebrow">Punto debil observable</p>
-        <h2>Servicios tecnicos de alto valor quedan mezclados con plantilla antigua, comentarios viejos y textos largos que reducen percepcion de precision.</h2>
-        <p class="lead-copy">Web activa Joomla con plantilla IT University, comentarios de hace cerca de 12 anos, menu extenso y correo publico del despacho.</p>
-      </div>
-      <div class="grid">
-        <article class="tile"><b>Valor</b><h3>Pericial judicial, informatica forense, telefonia forense, recuperacion de datos, mediacion y urgencias 24/7.</h3><p>Se trata de un negocio con servicios suficientemente rentables como para justificar un rediseño de conversion.</p></article>
-        <article class="tile"><b>Precio propuesto</b><h3>780 EUR</h3><p>Importe cerrado pensado para que sea una decision asumible y no una propuesta de agencia pesada.</p></article>
-      </div>
-    </div>
-  </section>
-    <section id="propuesta">
-    <div class="wrap">
-      <div class="grid two proposal-head">
-        <div>
-          <p class="eyebrow">Propuesta comercial</p>
-          <h2>Un rediseño pensado para vender, no solo para decorar</h2>
+
+    <section id="servicios">
+      <div class="wrap">
+        <p class="eyebrow">Servicios</p>
+        <h2>Áreas principales de atención</h2>
+        <div class="services">
+          <article class="card"><h3>Pericial judicial</h3><p>Informes técnicos para procedimientos y valoración de pruebas.</p></article>
+<article class="card"><h3>Informática forense</h3><p>Análisis de dispositivos, datos, evidencias y trazabilidad.</p></article>
+<article class="card"><h3>Telefonía forense</h3><p>Estudio técnico de comunicaciones y soportes móviles.</p></article>
+<article class="card"><h3>Mediación</h3><p>Soluciones profesionales para resolver conflictos con garantías.</p></article>
         </div>
-        <p class="lead-copy">La demo prioriza los puntos de mayor retorno y evita pedir al negocio una inversion grande antes de ver algo concreto.</p>
       </div>
-      <div class="grid four"><article class="tile"><b>01</b><h3>Entrada por prueba</h3><p>Entrada principal rediseñada para que el usuario entienda el siguiente paso sin leer toda la web.</p></article>
-<article class="tile"><b>02</b><h3>Urgencias 24/7</h3><p>Bloque pensado para reducir friccion, mejorar confianza y medir contactos reales.</p></article>
-<article class="tile"><b>03</b><h3>Servicios forenses</h3><p>Bloque pensado para reducir friccion, mejorar confianza y medir contactos reales.</p></article>
-<article class="tile"><b>04</b><h3>Ficha pericial</h3><p>Bloque pensado para reducir friccion, mejorar confianza y medir contactos reales.</p></article></div>
-      <div class="proof-row"><span>Informatica forense</span><span>Telefonia forense</span><span>Mediacion</span><span>Informes judiciales</span></div>
-    </div>
-  </section>
-    <section id="contacto" class="soft">
-    <div class="wrap grid two">
-      <div>
-        <p class="eyebrow">Contacto publico localizado</p>
-        <h2>La accion principal queda visible sin buscar en el pie</h2>
-        <p class="lead-copy">Esta demo usa solo datos publicos encontrados durante la verificacion. En produccion se sustituirian imagenes de stock por fotografias reales del equipo, sede o instalaciones.</p>
-        <p class="source">Fuente actual: <a href="https://www.permed.es/index.php/es/garantia/garantia" target="_blank" rel="noopener">https://www.permed.es/index.php/es/garantia/garantia</a></p>
+    </section>
+
+    <section class="dark" id="metodo">
+      <div class="wrap">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2>Un proceso claro desde el primer contacto</h2>
+        <p>Cada consulta se atiende con información previa, orientación práctica y un siguiente paso definido.</p>
+        <ol class="steps">
+          <li><span>1</span><strong>Recepción del caso</strong></li>
+<li><span>2</span><strong>Análisis de evidencia</strong></li>
+<li><span>3</span><strong>Informe</strong></li>
+<li><span>4</span><strong>Ratificación si procede</strong></li>
+        </ol>
       </div>
-      <aside class="contactbox">
-        <dl>
-          <div><dt>Telefono</dt><dd><a href="tel:609668009">609 66 80 09</a></dd></div>
-          <div><dt>Email</dt><dd><a href="mailto:permed@permed.es">permed@permed.es</a></dd></div>
-          <div><dt>Tipo de contacto</dt><dd>correo publico del despacho</dd></div>
-          <div><dt>Ubicacion</dt><dd>Comunidad Valenciana y Castilla-La Mancha</dd></div>
-        </dl>
-      </aside>
-    </div>
-  </section>
+    </section>
+
+    <section id="contacto">
+      <div class="wrap two">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Solicite información o reserve una cita</h2>
+          <p>Puede contactar por teléfono o email para resolver dudas, preparar documentación o solicitar una primera valoración.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="tel:609668009">Llamar ahora</a>
+            <a class="button secondary" href="mailto:permed@permed.es">Enviar email</a>
+          </div>
+        </div>
+        <aside class="contact-card">
+          <dl>
+            <div><dt>Teléfono</dt><dd><a href="tel:609668009">609 66 80 09</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:permed@permed.es">permed@permed.es</a></dd></div>
+            <div><dt>Dirección</dt><dd>Comunidad Valenciana y Castilla-La Mancha</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
   </main>
-  <footer><div class="wrap"><span>Demo conceptual no oficial para propuesta de rediseño.</span><span>PERMED · Valencia / Alicante / Castellon</span></div></footer>
+
+  <footer>
+    <div class="wrap"><span>© 2026 PERMED</span><span>Comunidad Valenciana</span></div>
+  </footer>
 </body>
 </html>

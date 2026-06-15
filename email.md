@@ -1,26 +1,23 @@
 # Email draft - PERMED
 
 - To: permed@permed.es
-- Contact type: correo publico del despacho
-- Subject: PERMED: demo para que la web transmita rigor pericial desde el primer segundo
+- Subject: PERMED: propuesta web para presentar mejor servicios periciales
 - Proposed price: 780 EUR
 - Demo: https://demo-valencia-pericial-permed.vercel.app
 - Source: https://www.permed.es/index.php/es/garantia/garantia
 
-Hola Jose Francisco,
+Hola,
 
-He revisado PERMED y el problema no es falta de servicios: teneis criminalistica, telefonia forense, recuperacion de datos, mediacion, informes periciales y urgencias. El problema es que la web actual no transmite la precision que esos servicios requieren.
-
-Cuando un abogado o una empresa busca un perito, decide rapido si confia. Ver plantilla antigua, comentarios de hace muchos anos y menus demasiado largos puede hacer que parezca menos actualizado de lo que realmente estais.
-
-He preparado una demo con enfoque de laboratorio pericial:
+He preparado una propuesta visual para PERMED:
 https://demo-valencia-pericial-permed.vercel.app
 
-La idea es ordenar los servicios por tipo de prueba, hacer visible el 24/7 y convertir cada consulta en una ficha util para valorar el caso.
+La página está planteada como una web final: informes periciales, informática forense, telefonía, mediación, urgencias y formulario de caso.
 
-Lo dejaria implantado por 780 EUR, pago unico, con version movil, traspaso de contenido principal y formulario de caso pericial.
+La web actual puede ganar claridad y sensación de precisión técnica. En servicios periciales, el visitante necesita entender rápido qué pruebas podéis analizar, cómo contactar y qué información enviar.
 
-Si lo veis interesante, lo revisamos esta semana.
+Presupuesto cerrado: 780 EUR, pago único. Incluye rediseño responsive, estructura por servicio, formulario de caso, traspaso de contenido principal y publicación.
+
+Si os interesa, puedo enseñaros la propuesta y ajustarla a vuestros servicios prioritarios.
 
 Un saludo,
 Alfonso Cifuentes
