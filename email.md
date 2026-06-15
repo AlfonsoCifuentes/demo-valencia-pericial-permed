@@ -4,7 +4,7 @@
 - Contact type: correo publico del despacho
 - Subject: PERMED: demo para que la web transmita rigor pericial desde el primer segundo
 - Proposed price: 780 EUR
-- Demo: {{VERCEL_URL}}
+- Demo: https://demo-valencia-pericial-permed.vercel.app
 - Source: https://www.permed.es/index.php/es/garantia/garantia
 
 Hola Jose Francisco,
@@ -14,7 +14,7 @@ He revisado PERMED y el problema no es falta de servicios: teneis criminalistica
 Cuando un abogado o una empresa busca un perito, decide rapido si confia. Ver plantilla antigua, comentarios de hace muchos anos y menus demasiado largos puede hacer que parezca menos actualizado de lo que realmente estais.
 
 He preparado una demo con enfoque de laboratorio pericial:
-{{VERCEL_URL}}
+https://demo-valencia-pericial-permed.vercel.app
 
 La idea es ordenar los servicios por tipo de prueba, hacer visible el 24/7 y convertir cada consulta en una ficha util para valorar el caso.
 

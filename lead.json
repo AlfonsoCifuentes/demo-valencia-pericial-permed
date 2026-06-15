@@ -10,7 +10,7 @@
   "price": "780 EUR",
   "weakness": "Servicios tecnicos de alto valor quedan mezclados con plantilla antigua, comentarios viejos y textos largos que reducen percepcion de precision.",
   "value_signal": "Pericial judicial, informatica forense, telefonia forense, recuperacion de datos, mediacion y urgencias 24/7.",
-  "demo_url": null,
-  "github_url": null,
+  "demo_url": "https://demo-valencia-pericial-permed.vercel.app",
+  "github_url": "https://github.com/AlfonsoCifuentes/demo-valencia-pericial-permed",
   "outreach_status": "drafted_not_sent"
 }
