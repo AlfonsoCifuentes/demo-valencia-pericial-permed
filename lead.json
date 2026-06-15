@@ -14,8 +14,9 @@
   "github_url": "https://github.com/AlfonsoCifuentes/demo-valencia-pericial-permed",
   "outreach_status": "queued_pending",
   "outreach_queue_id": "hermes-webdemo-20260615-011",
-  "outreach_version": "hermes-client-facing-copy-v2-20260615",
+  "outreach_version": "hermes-human-intro-v3-20260615",
   "outreach_contact_type": "correo publico del despacho",
   "proposed_price": "780 EUR",
-  "website_copy_mode": "client_facing_final_site"
+  "website_copy_mode": "client_facing_final_site",
+  "outreach_tone": "human_intro"
 }

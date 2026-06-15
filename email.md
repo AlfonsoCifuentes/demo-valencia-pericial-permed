@@ -1,21 +1,23 @@
 # Email draft - PERMED
 
 - To: permed@permed.es
-- Subject: PERMED: propuesta web para presentar mejor servicios periciales
+- Subject: Propuesta web para PERMED
 - Proposed price: 780 EUR
 - Demo: https://demo-valencia-pericial-permed.vercel.app
 - Source: https://www.permed.es/index.php/es/garantia/garantia
 
 Hola,
 
+Soy Alfonso Cifuentes, diseñador web.
+
 He preparado una propuesta visual para PERMED:
 https://demo-valencia-pericial-permed.vercel.app
 
-La página está planteada como una web final: informes periciales, informática forense, telefonía, mediación, urgencias y formulario de caso.
+La he planteado como una web final para servicios periciales: informes judiciales, informática forense, telefonía, recuperación de datos, mediación, urgencias y formulario de caso.
 
-La web actual puede ganar claridad y sensación de precisión técnica. En servicios periciales, el visitante necesita entender rápido qué pruebas podéis analizar, cómo contactar y qué información enviar.
+Creo que en servicios técnicos como los vuestros ayuda mucho presentar los servicios por tipo de prueba y facilitar que abogados, empresas o particulares expliquen el caso desde el primer contacto.
 
-Presupuesto cerrado: 780 EUR, pago único. Incluye rediseño responsive, estructura por servicio, formulario de caso, traspaso de contenido principal y publicación.
+El presupuesto para dejarla adaptada y publicada sería de 780 EUR, pago único. Incluye diseño responsive, estructura por servicio, formulario de caso, traspaso de contenido principal y publicación.
 
 Si os interesa, puedo enseñaros la propuesta y ajustarla a vuestros servicios prioritarios.
 
